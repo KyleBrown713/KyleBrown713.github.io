@@ -3,6 +3,40 @@ hr {
   margin-bottom: 20px;
 }
 
+/* Header */
+
+.site-header {
+  position: absolute;
+  top:0;
+  width:100%;
+  border:none;
+  padding:0 30px;
+}
+
+.site-header.sticky{
+  position: sticky;
+  background:#fff;
+  box-shadow: 5px 0px 10px #888888;
+}
+
+.site-title {
+  font-weight:600;
+}
+
+.site-title, .site-title:visited, .site-nav .page-link {
+  color:#fff
+}
+
+.sticky .site-title, .sticky .site-title:visited, .sticky .site-nav .page-link {
+  color: #424242;
+}
+
+/* Page Content */
+
+.page-content {
+  padding: 0 0 30px;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
