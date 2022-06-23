@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-## About Joypad Cinema
-
 Hi! My name is Kyle, and I've been playing video games as long as I can remember.
 
 My love for gaming drove me to learn game development in college, but I realized that my true passion lied more in the analysis of games rather than their development.
