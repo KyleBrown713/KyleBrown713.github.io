@@ -8,6 +8,7 @@ hr {
 .site-header {
   position: absolute;
   top:0;
+  height: 60px;
   width: calc(100% - 60px);
   background: transparent;
   border:none;
@@ -23,7 +24,9 @@ hr {
 }
 
 .site-title {
+  font-size: 46px;
   font-weight:600;
+  transition: font-size .3s ease;
 }
 
 .site-title, .site-title:visited, .site-nav .page-link {
@@ -31,6 +34,7 @@ hr {
 }
 
 .sticky .site-title, .sticky .site-title:visited, .sticky .site-nav .page-link {
+  font-size:30px;
   color: #424242;
 }
 
