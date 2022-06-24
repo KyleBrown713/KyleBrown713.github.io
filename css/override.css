@@ -33,8 +33,11 @@ hr {
   color:#fff
 }
 
-.sticky .site-title, .sticky .site-title:visited, .sticky .site-nav .page-link {
+.sticky .site-title, .sticky .site-title:visited {
   font-size:30px;
+}
+
+.sticky .site-title, .sticky .site-title:visited, .sticky .site-nav .page-link {
   color: #424242;
 }
 
