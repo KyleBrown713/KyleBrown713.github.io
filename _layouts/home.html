@@ -8,10 +8,22 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
+
+        {% if site.paginate %}
+          {% assign posts = paginator.posts %}
+        {% else %}
+          {% assign posts = site.posts %}
+        {% endif %}
+
+        {%- if posts.size > 0 -%}
+          {% for post in posts limit:4 -%}
+            <div class="homeFeaturedImage featuredImage">
+              {% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
+              <h1 class="homePostTitle">{{ page.title }}</h1>
+            </div>
+          {%- endfor %}
+        {%- endif %}
       
-        <div class="featuredImage">
-            <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        </div>
         <div class="wrapper">
             <div class="home">
                 {%- if page.title -%}
@@ -19,14 +31,6 @@
                 {%- endif -%}
               
                 {{ content }}
-              
-              
-                {% if site.paginate %}
-                  {% assign posts = paginator.posts %}
-                {% else %}
-                  {% assign posts = site.posts %}
-                {% endif %}
-              
               
                 {%- if posts.size > 0 -%}
                   {%- if page.list_title -%}
