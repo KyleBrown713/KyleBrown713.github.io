@@ -46,21 +46,53 @@ hr {
   margin-bottom: 30px;
 }
 
-.featuredImage:before {
+.featuredImage:before, .featuredImage:after {
   content: "";
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100px;
   background: rgb(0,0,0);
+}
+
+.featuredImage:before {
+  top: 0;
   background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+}
+
+.featuredImage:after {
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
 }
 
 .featuredImage img {
   height:100%;
   width:100%;
   object-fit:cover;
+}
+
+.homePostHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homeFeaturedImage {
+  position: relative;
+}
+
+.homeFeaturedImage .homePostTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color:#fff;
+  padding:0 30px;
+}
+
+.homeFeaturedImage:nth-child(2), .homeFeaturedImage:nth-child(3), .homeFeaturedImage:nth-child(4) {
+  display: inline-block;
+  width: 32%;
+  height: 250px;
 }
 
 /* Page Content */

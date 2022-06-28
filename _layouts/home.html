@@ -16,12 +16,14 @@
         {% endif %}
 
         {%- if posts.size > 0 -%}
-          {% for post in posts limit:4 -%}
-            <div class="homeFeaturedImage featuredImage">
-              {% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
-              <h1 class="homePostTitle">{{ post.title }}</h1>
-            </div>
-          {%- endfor %}
+          <div class="homePostHeader">
+            {% for post in posts limit:4 -%}
+              <div class="homeFeaturedImage featuredImage">
+                {% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
+                <h1 class="homePostTitle">{{ post.title }}</h1>
+              </div>
+            {%- endfor %}
+          </div>
         {%- endif %}
       
         <div class="wrapper">
