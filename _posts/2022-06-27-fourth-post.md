@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Dead Space
-date:   2022-06-23
+date:   2022-06-27
 author: Kyle Brown
 description: This is my fourth post.
 featured-image: gameOver.jpg

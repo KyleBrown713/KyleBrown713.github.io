@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Final Fantasy
-date:   2022-06-23
+date:   2022-06-25
 author: Kyle Brown
 description: This is my second post.
 featured-image: nesController.jpg
