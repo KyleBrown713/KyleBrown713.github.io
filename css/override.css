@@ -87,6 +87,7 @@ hr {
   left: 0;
   color:#fff;
   padding:0 30px;
+  z-index: 1;
 }
 
 .homeFeaturedImage:nth-child(2), .homeFeaturedImage:nth-child(3), .homeFeaturedImage:nth-child(4) {
