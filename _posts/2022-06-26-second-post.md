@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Second Post
+title:  Final Fantasy
 date:   2022-06-23
 author: Kyle Brown
 description: This is my second post.
